@@ -21,7 +21,7 @@ echo "Temporary password set."
 # FORCE PASSWORD CHANGE
 # -d 0  : force password change at next login
 # -E -1 : ensure account never expires (prevents PAM edge cases)
-chage -d 0 -E -1 "$USER_NAME"
+chage -d 0 "$USER_NAME"
 echo "Password change enforced at first login."
 
 # VERIFY STATUS
